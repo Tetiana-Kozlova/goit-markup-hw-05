@@ -519,10 +519,11 @@ img {
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   opacity: 0;
+  /* transform: translateY(100%); */
 }
 
-.project-thumb:hover::before,
-.project-item-desc:hover {
+.project-link:hover .project-item-desc,
+.project-link:hover .project-thumb::before {
   opacity: 1;
 }
 
@@ -531,8 +532,7 @@ img {
   position: absolute;
   left: 24px;
   top: 63px;
-  height: 100%;
-  width: 100%;
+  margin: 0 auto;
 
   font-family: 'Roboto';
   font-style: normal;
